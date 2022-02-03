@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tips Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1 class="title">Tips Calculator</h1>
+        </div>
+        <div>
+            <form class="tipsForm" id="tipsForm">
+                <label for="bill">
+                    <p>Total Value:</p>
+                </label>
+                <p>
+                    $ <input type="number" name="bill" id="bill" placeholder="100" class="formInput" required>
+                </p>
+
+                <label for="service">
+                    <p>Quality of service:</p>
+                </label>
+                <p>
+                    <select name="service" id="service" class="formSelect" required>
+                        <option disabled selected value="0">-- Choose an option --</option>
+                        <option value="0.3">30% - Awesome</option>
+                        <option value="0.2">20% - Good</option>
+                        <option value="0.15">15% - Ok</option>
+                        <option value="0.1">10% - Bad</option>
+                        <option value="0.05">0,5% - Terrible</option>
+                    </select>
+                </p>
+                <label for="people">
+                    <p>How many people will split the bill?</p>
+                </label>
+                <p>
+                    <input type="number" name="people" id="people" placeholder="1" class="formInput" required>
+                </p>
+                <button type="submit" class="formSubmit">Calculate</button>
+            </form>
+        </div>
+        <div id="totalTip">
+            Total Tip:
+            R$ <span id="tip">0.00</span>
+            <p id="each">Each</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

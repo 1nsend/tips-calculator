@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+:root {
+    --primary-color: lightblue;
+    --secondary-color: Grey;
+    --tertiary-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Oxygen, sans-serif;
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.title {
+    background: #ffffff;
+    color: #272727;
+    padding: 18px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formInput {
+    background: white;
+    width: 38px;
+    height: 18px;
+    padding: 5px 5px 8px 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.formInput:hover {
+    width: 45px;
+}
+
+.formInput:focus {
+    border: 3px solid var(--primary-color);
+    width: 45px;
+    outline: none;
+}
+
+.formSelect {
+    background-color: white;
+    width: 180px;
+    height: 32px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    display: block;
+    margin: 40px auto;
+    width: 150px;
+    height: 50px;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 10px;
+    color: #212121;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.formSubmit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background-color: #add8e6bd;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.formSubmit:hover {
+    color: #272727;
+    text-decoration: underline;
+}
+
+.formSubmit:hover::before {
+    width: 100%;
+}
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
